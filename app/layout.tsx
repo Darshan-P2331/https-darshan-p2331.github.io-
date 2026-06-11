@@ -18,8 +18,8 @@ const fontHeading = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Jane Doe - Portfolio",
-  description: "Portfolio of Jane Doe, Full Stack Engineer & UI Designer",
+  title: "Darshan P - Portfolio",
+  description: "Portfolio of Darshan P, Full Stack Developer & AI Integrator",
 };
 
 export default function RootLayout({

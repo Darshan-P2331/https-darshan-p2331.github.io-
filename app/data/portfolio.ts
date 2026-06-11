@@ -1,15 +1,14 @@
-import { Mail, GitBranch, Briefcase, MessageCircle } from "lucide-react";
+import { Briefcase, GitBranch, Mail } from "lucide-react";
 
 export const personalInfo = {
-  name: "Jhon Doe",
-  role: "Full Stack Engineer",
+  name: "Darshan P",
+  role: "Full Stack Developer & AI Integrator",
   tagline: "I build fast, accessible, and beautiful web applications.",
-  bio: "With over 2 years of experience in web development, I specialize in creating intuitive user interfaces and robust backend systems. I am passionate about modern web technologies and user-centric design.",
+  bio: "Software Engineer with 3+ years of experience architecting AI-powered Python ETL pipelines and scalable full-stack JavaScript applications.",
   email: process.env.NEXT_PUBLIC_EMAIL || "hello@janedoe.com",
   socials: [
-    { name: "GitHub", url: "https://github.com", icon: GitBranch },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: Briefcase },
-    { name: "Twitter", url: "https://twitter.com", icon: MessageCircle },
+    { name: "GitHub", url: "https://github.com/", icon: GitBranch },
+    { name: "LinkedIn", url: "https://linkedin.com/", icon: Briefcase },
     { name: "Email", url: `mailto:${process.env.NEXT_PUBLIC_EMAIL || "hello@janedoe.com"}`, icon: Mail },
   ],
 };
@@ -20,49 +19,66 @@ export const experience = [
     role: "Associate (SDE II)",
     company: "Deutsche Bank",
     duration: "2019 - Present",
-    description: "Worked on the Avaya Aura Platform and maintained multiple client projects using React, Node.js, and Tailwind CSS. Implemented a custom CMS for content management.",
+    description: [
+      {
+        section: "AI & Machine Learning",
+        points: [
+          "Built high-impact automation tools using **Google Document AI** and **Gemini** to revolutionize document processing workflows in Tax Operations.",
+          "Architected a unified, hybrid document processing pipeline enabling users to dynamically combine **DocAI** and **Gemini** processors for splitting, classifying, and extracting data in a single stream.",
+          "Trained and fine-tuned machine learning models to accurately extract data and insights from complex structured and unstructured documents.",
+        ],
+      },
+      {
+        section: "Data Engineering & Big Data",
+        points: [
+          "Engineered a robust **Spark-based ETL** tool to consolidate massive, multi-source datasets into a centralized repository, streamlining tax reporting.",
+          "Developed a configuration-driven file system utility for Linux and Hadoop that supports dynamic, partial data loading from various sources.",
+          `**Slashed ETL** job times by architecting a fail-safe "resume" mechanism that restarts tasks from the exact stage of failure rather than from scratch.`
+        ],
+      },
+    ],
   },
   {
     id: 2,
     role: "Intern",
     company: "Avaya",
     duration: "6 months",
-    description: "Led the frontend team in migrating a legacy monolith to a modern Next.js architecture, improving performance by 40% and developer velocity.",
+    description: [
+      {
+        section: "Key Contributions",
+        points: [
+      "Contributed to the development of ASCI, a server health monitoring application that translates raw system logs into an intuitive, readable dashboard.",
+      "Expanded backend data collection by writing and enhancing **Shell scripts** to extract additional critical system health metrics and package them into tar files for downstream processing.",
+      "Refactored **Angular** components and updated **Kendo UI** configurations, improving code reusability and rendering complex system health data more accessible to end-users."
+        ],
+      },
+    ],
   },
 ];
 
 export const skills = {
   frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "GraphQL"],
-  tools: ["Git", "Docker", "Figma", "Jest", "CI/CD"],
+  backend: ["Node.js", "Express", "Python", "PostgreSQL", "Oracle", "MongoDB", "Asyncio", "Pandas", "Numpy", "Gemini", "Google Document AI"],
+  tools: ["Git", "Control-M", "Jira", "GCP", "Confluence", "Hadoop"],
 };
 
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A modern e-commerce solution built with Next.js App Router, Stripe for payments, and a headless CMS. Features server-side rendering for optimal SEO.",
+    title: "Resto.",
+    description: "A modern food ordering platform build with React.js, Node.js, Express.js, and MongoDB. It features a sleek UI, real-time order tracking, and seamless payment integration with PayPal.",
     image: "/placeholder-project-1.jpg",
-    tags: ["Next.js", "Tailwind CSS", "Stripe", "Sanity"],
+    tags: ["React.js", "Express.js", "PayPal", "MongoDB"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Darshan-P2331/resto",
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management tool with real-time updates using WebSockets, drag-and-drop functionality, and comprehensive analytics.",
+    title: "Homelab",
+    description: "A small set of ansible tasks to automate the setup of a homelab server. It includes tasks for installing and configuring Docker, setting up a reverse proxy with Nginx, and deploying a few sample applications.",
     image: "/placeholder-project-2.jpg",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
+    tags: ["Ansible", "Docker", "Raspberry Pi", "Linux"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: 3,
-    title: "Portfolio Template",
-    description: "A minimalist, open-source developer portfolio template. Highly customizable and built with performance and accessibility in mind.",
-    image: "/placeholder-project-3.jpg",
-    tags: ["Next.js", "shadcn/ui", "Framer Motion"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Darshan-P2331/homelab",
   },
 ];

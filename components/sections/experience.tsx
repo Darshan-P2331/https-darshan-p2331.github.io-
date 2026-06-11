@@ -3,6 +3,15 @@
 import { experience } from "@/app/data/portfolio";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
+
+function parseBold(text: string): ReactNode[] {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**")
+      ? <strong key={i}>{part.slice(2, -2)}</strong>
+      : part
+  );
+}
 
 export function ExperienceSection() {
   return (
@@ -64,8 +73,22 @@ export function ExperienceSection() {
                   </div>
                   <div className="text-lg font-medium text-muted-foreground">{item.company}</div>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                <CardContent className="space-y-4">
+                  {item.description.map((section, i) => (
+                    <div key={i}>
+                      <h4 className="text-sm font-semibold uppercase tracking-wider text-indigo-500 dark:text-indigo-400 mb-2">
+                        {section.section}
+                      </h4>
+                      <ul className="space-y-2">
+                        {section.points.map((point, j) => (
+                          <li key={j} className="text-muted-foreground leading-relaxed flex gap-2">
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />
+                            <span>{parseBold(point)}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </CardContent>
               </Card>
             </motion.div>
