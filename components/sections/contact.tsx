@@ -19,7 +19,7 @@ export function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="max-w-2xl mx-auto p-8 md:p-12 rounded-3xl border border-border/40 bg-background/30 dark:bg-background/20 backdrop-blur-md hover:border-indigo-500/20 hover:shadow-2xl hover:shadow-indigo-500/5 dark:hover:shadow-indigo-500/2 transition-all duration-500"
+          className="max-w-2xl mx-auto p-8 md:p-12 rounded-3xl border border-border/40 bg-background/30 dark:bg-background/20 backdrop-blur-md hover:border-indigo-500/20 hover:shadow-2xl hover:shadow-indigo-500/5 dark:hover:shadow-indigo-500/2 transition-[border-color,box-shadow] duration-500"
         >
           <motion.h2 
             initial={{ opacity: 0, scale: 0.95 }}

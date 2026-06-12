@@ -49,7 +49,7 @@ export function SkillsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="space-y-4 p-6 rounded-2xl border border-border/40 bg-background/30 dark:bg-background/20 backdrop-blur-sm hover:border-indigo-500/20 hover:shadow-lg dark:hover:shadow-indigo-500/5 transition-all duration-300"
+            className="space-y-4 p-6 rounded-2xl border border-border/40 bg-background/30 dark:bg-background/20 backdrop-blur-sm hover:border-indigo-500/20 hover:shadow-lg dark:hover:shadow-indigo-500/5 transition-[border-color,box-shadow] duration-300"
           >
             <h3 className="text-xl font-heading font-semibold text-indigo-500 dark:text-indigo-400">Frontend</h3>
             <motion.div 
@@ -75,7 +75,7 @@ export function SkillsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-4 p-6 rounded-2xl border border-border/40 bg-background/30 dark:bg-background/20 backdrop-blur-sm hover:border-indigo-500/20 hover:shadow-lg dark:hover:shadow-indigo-500/5 transition-all duration-300"
+            className="space-y-4 p-6 rounded-2xl border border-border/40 bg-background/30 dark:bg-background/20 backdrop-blur-sm hover:border-indigo-500/20 hover:shadow-lg dark:hover:shadow-indigo-500/5 transition-[border-color,box-shadow] duration-300"
           >
             <h3 className="text-xl font-heading font-semibold text-indigo-500 dark:text-indigo-400">Backend</h3>
             <motion.div 
@@ -101,7 +101,7 @@ export function SkillsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-4 p-6 rounded-2xl border border-border/40 bg-background/30 dark:bg-background/20 backdrop-blur-sm hover:border-indigo-500/20 hover:shadow-lg dark:hover:shadow-indigo-500/5 transition-all duration-300"
+            className="space-y-4 p-6 rounded-2xl border border-border/40 bg-background/30 dark:bg-background/20 backdrop-blur-sm hover:border-indigo-500/20 hover:shadow-lg dark:hover:shadow-indigo-500/5 transition-[border-color,box-shadow] duration-300"
           >
             <h3 className="text-xl font-heading font-semibold text-indigo-500 dark:text-indigo-400">Tools</h3>
             <motion.div 

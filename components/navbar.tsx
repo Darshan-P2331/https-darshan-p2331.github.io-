@@ -50,19 +50,19 @@ export function Navbar() {
 
   return (
     <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
-      <nav className="pointer-events-auto flex h-12 items-center gap-1 md:gap-2 rounded-full border border-border/40 bg-background/60 dark:bg-background/40 backdrop-blur-md px-3 md:px-4 shadow-lg shadow-black/5 dark:shadow-black/20 max-w-full">
+      <nav className="pointer-events-auto flex h-12 items-center gap-1 md:gap-2 rounded-full border border-border/40 bg-background/60 dark:bg-background/40 backdrop-blur-md px-3 md:px-4 shadow-lg shadow-black/5 dark:shadow-black/20 max-w-full overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         <a
           href="#"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="mr-2 md:mr-4 flex items-center font-heading font-bold text-sm text-foreground select-none hover:opacity-85 transition-opacity"
+          className="shrink-0 mr-2 md:mr-4 flex items-center font-heading font-bold text-sm text-foreground select-none hover:opacity-85 transition-opacity"
         >
           DP
         </a>
 
-        <div className="flex items-center gap-0.5 md:gap-1">
+        <div className="flex items-center gap-0.5 md:gap-1 shrink-0">
           {navItems.map((item) => (
             <button
               key={item.id}

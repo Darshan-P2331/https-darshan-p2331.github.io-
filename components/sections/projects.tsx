@@ -94,7 +94,7 @@ export function ProjectsSection() {
               transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
               className="flex"
             >
-              <Card className="group flex flex-col border-border/40 bg-background/40 backdrop-blur-sm overflow-hidden hover:border-indigo-500/30 hover:shadow-xl dark:hover:shadow-indigo-500/5 transition-all duration-300 w-full">
+              <Card className="group flex flex-col border-border/40 bg-background/40 backdrop-blur-sm overflow-hidden hover:border-indigo-500/30 hover:shadow-xl dark:hover:shadow-indigo-500/5 transition-[border-color,box-shadow] duration-300 w-full">
                 <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-indigo-500/5 via-purple-500/5 to-pink-500/5 border-b border-border/40 flex items-center justify-center">
                   <div className="absolute inset-0 bg-grid-pattern opacity-10 dark:opacity-[0.05]" />
                   <div className="w-full h-full transform group-hover:scale-[1.04] transition-transform duration-500 ease-out flex items-center justify-center">

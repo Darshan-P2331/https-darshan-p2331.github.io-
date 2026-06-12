@@ -61,7 +61,7 @@ export function ExperienceSection() {
                 <div className="absolute h-8 w-8 rounded-full bg-indigo-500/10 dark:bg-indigo-500/20 blur-[4px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               </div>
 
-              <Card className="border-border/40 bg-background/40 backdrop-blur-sm hover:border-indigo-500/30 hover:shadow-lg dark:hover:shadow-indigo-500/5 transition-all duration-300 hover:-translate-y-1">
+              <Card className="border-border/40 bg-background/40 backdrop-blur-sm hover:border-indigo-500/30 hover:shadow-lg dark:hover:shadow-indigo-500/5 transition-[border-color,box-shadow,translate] duration-300 hover:-translate-y-1">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                     <CardTitle className="text-xl font-heading font-semibold group-hover:text-primary transition-colors duration-300">
