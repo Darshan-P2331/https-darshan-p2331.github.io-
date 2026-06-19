@@ -7,8 +7,8 @@ export const personalInfo = {
   bio: "Software Engineer with 3+ years of experience architecting AI-powered Python ETL pipelines and scalable full-stack JavaScript applications.",
   email: process.env.NEXT_PUBLIC_EMAIL || "hello@janedoe.com",
   socials: [
-    { name: "GitHub", url: "https://github.com/", icon: GitBranch },
-    { name: "LinkedIn", url: "https://linkedin.com/", icon: Briefcase },
+    { name: "GitHub", url: "https://github.com/Darshan-P2331", icon: GitBranch },
+    { name: "LinkedIn", url: "https://linkedin.com/in/darshanp2331", icon: Briefcase },
     { name: "Email", url: `mailto:${process.env.NEXT_PUBLIC_EMAIL || "hello@janedoe.com"}`, icon: Mail },
   ],
 };
