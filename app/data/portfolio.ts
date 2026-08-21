@@ -81,4 +81,13 @@ export const projects = [
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/Darshan-P2331/homelab",
   },
+  {
+    id: 3,
+    title: "2048 Game",
+    description: "A web-based version of the popular 20248 game built with React.js. It features smooth animations, responsive design, and a scoring system to track the player's progress.",
+    image: "https://github.com/Darshan-P2331/2048-animated/blob/master/src/assets/img/2048.gif?raw=true",
+    tags: ["React.js", "JavaScript", "CSS"],
+    liveUrl: "https://darshan-p2331.github.io/2048-animated/",
+    githubUrl: "https://github.com/Darshan-P2331/2048-animated",
+  }
 ];
